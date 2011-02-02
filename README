@@ -1,0 +1,53 @@
+UPDATE: Currently not extensively tested on IE6, IE7, Opera and Safari (mobile and desktop) browsers
+
+This is a fluid CSS framework based on two popular solutions available online:
+1) The 1140px Grid by Andy Taylor – http://cssgrid.net
+2) Blueprint CSS Framework  - http://www.blueprintcss.org
+
+Problem: 
+********
+  Blueprint CSS is pretty comprehensive in the styling and themeing solutions it provides to web developers. But lately, varying screen sizes in laptops, smartphones and other hand-held devices have called for more flexible layouts which Blueprint's fixed, pixel-based styling cannot provide. Ideally, as a developer, one would want to build a website and test it on the desktop browser and hope that it won't break on the browsers in other devices. Andy Taylor's CSSGrid provides a layout formatting system that makes this possible.
+  
+Solution:
+*********
+  Replace the fixed layout styles of Blueprint with CSSGrid but keep the formatting and styling of other elements unaffected. This will provide developers with a quick styling framework where they can apply the basic themes that Blueprint provides (by basic themes i mean, things like styling of input fields, error and flash messages etc) knowing that the website will look good on desktop, laptop and small screens as well. 
+  
+Usage:
+******
+  Four sample HTML files are available in the repo which are Blueprint's sample HTML files but with Sapna's fluid-CSS applied on them. Check them for usage.
+  
+Simple Examples:
+****************
+  1) Basic two column layout with header and footer:
+    <div class="container">           <!-- Container is divided into 12 imaginary columns -->
+      <div id="header" class="row">   <!-- Header is a single row  -->
+        <h2> This is a header </h2>
+      </div>
+      
+      <div id="content" class="row">  <!-- Main content area is a row. This will be divided into 2 columnar sections (using the 12 columns): 8 columns for the content area and remaining 4 columns for the sidebar area -->
+        <div id="main-content" class="eightcol"> Lorem ipsum dolor sit</div>
+        <div id="sidebar" class="fourcol last"> This is a sidebar </div>
+      </div>
+      
+      <div id="footer" class="row">   <!-- Footer is a single row -->
+        <p> This is a footer</p>
+      </div>
+    </div>                            <!-- Container ends here -->
+    
+  2) Basic three column layout with borders separating the columns
+      <div class="container">
+        <div id="header" class="row">   <!-- Header is a single row  -->
+          <h2> This is a header </h2>
+        </div>
+        
+        <div id="content" class="row">  
+          <!-- Content will be divided into 3 columnar sections (using the 12 columns): 3 columns for the left sidebar, 6 columns for the content area and remaining 3 columns for the right sidebar area -->
+          <div id="left-sidebar" class="threecol-border"> This is the left sidebar </div>
+          <div id="main-content" class="sixcol-border"> Lorem ipsum dolor sit</div>  
+          <div id="right-sidebar" class="threecol last"> This is a sidebar </div>
+        </div> 
+        
+        <div id="footer" class="row">   <!-- Footer is a single row -->
+          <p> This is a footer</p>
+        </div>
+      </div>

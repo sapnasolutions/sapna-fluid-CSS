@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluid Forms</title>
+    <meta name="generator" content="Studio 3 http://aptana.com/" />
+    <meta name="author" content="Parag" />
+    <!-- Date: 2011-02-02 -->
+    
+    <link rel="stylesheet" href="css/global.css" type="text/css" media="screen" />
+    
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+    <![endif]-->
+    
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/ie6-7.css" type="text/css" media="screen" />
+    <![endif]-->
+    
+    <!-- Make minor type adjustments for 1024 monitors -->
+    <link rel="stylesheet" href="css/smallerscreen.css" media="only screen and (max-width: 1023px)" />
+    <!-- Resets grid for mobile -->
+    <link rel="stylesheet" href="css/mobile.css" media="handheld, only screen and (max-width: 767px)" />
+    <!-- Put your layout here -->
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="container showgrid">
+      <div id="header" class="row">
+        <h1>Forms</h1>
+        <hr />
+      </div>
+      <div id="form-container" class="row">
+        <div class="sixcol-border">
+
+          <form id="dummy" action="" method="post">
+  
+            <fieldset>
+              <legend>Simple sample form</legend>
+              <p>
+                <label for="dummy0">Text input (title)</label><br>
+                <input type="text" class="title" name="dummy0" id="dummy0" value="Field with class .title">
+              </p>
+  
+              <p>
+                <label for="dummy1">Another field</label><br>
+                <input type="text" class="text" id="dummy1" name="dummy1" value="Field with class .text">
+              </p>
+  
+              <p>
+                <label for="dummy2">Textarea</label><br>
+                <textarea name="dummy2" id="dummy2" rows="5" cols="20"></textarea>
+              </p>
+  
+              <p>
+                <label for="dummy3">A password field</label><br>
+                <input type="password" class="text" id="dummy3" name="dummy3" value="Password field with class .text">
+              </p>
+  
+              <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </p>
+  
+            </fieldset>
+          </form>
+
+        </div>
+        <div class="sixcol last">
+  
+          <div class="error">
+            This is a &lt;div&gt; with the class <strong>.error</strong>. <a href="#">Link</a>.
+          </div>
+          <div class="notice">
+            This is a &lt;div&gt; with the class <strong>.notice</strong>. <a href="#">Link</a>.
+          </div>
+          <div class="info">
+            This is a &lt;div&gt; with the class <strong>.info</strong>. <a href="#">Link</a>.
+          </div>
+          <div class="success">
+            This is a &lt;div&gt; with the class <strong>.success</strong>. <a href="#">Link</a>.
+          </div>
+  
+          <fieldset>
+            <legend>Select, checkboxes, lists</legend>
+  
+            <p>
+              <label for="dummy3">Select field</label><br>
+              <select id="dummy3" name="dummy3">
+                <option value="1">Ottawa</option>
+                <option value="2">Calgary</option>
+                <option value="3">Moosejaw</option>
+              </select>
+            </p>
+  
+            <p>
+              <label for="dummy4">Select with groups</label><br>
+              <select id="dummy4" name="dummy4">
+                <option>Favorite pet</option>
+                <optgroup label="mammals">
+                  <option>dog</option>
+                  <option>cat</option>
+                  <option>rabbit</option>
+                  <option>horse</option>
+                </optgroup>
+                <optgroup label="reptiles">
+                  <option>iguana</option>
+                  <option>snake</option>
+                </optgroup>
+              </select>
+            </p>
+  
+            <p><label>Radio buttons</label><br>
+              <input type="radio" name="example"> Radio one<br>
+              <input type="radio" name="example"> Radio two<br>
+              <input type="radio" name="example"> Radio three<br>
+            </p>
+  
+            <p><label>Checkboxes</label><br>
+              <input type="checkbox"> Check one<br>
+              <input type="checkbox"> Check two<br>
+              <input type="checkbox"> Check three<br>
+            </p>
+  
+          </fieldset>
+  
+        </div>
+
+        <div class="twelvecol last">
+  
+          <fieldset>
+            <legend>Alignment</legend>
+  
+            <p>
+              <label for="dummy5">Select field</label>
+              <select id="dummy5" name="dummy5">
+                <option value="1">Ottawa</option>
+                <option value="2">Calgary</option>
+                <option value="3">Moosejaw</option>
+              </select>
+            </p>
+  
+            <p>
+              <label for="dummy6">Text input (title)</label>
+              <input type="text" class="title" name="dummy6" id="dummy6" value="Field with class .title">
+            </p>
+  
+            <p>
+              <label for="dummy7">Select field</label>
+              <select id="dummy7" name="dummy7">
+                <option value="1">Ottawa</option>
+                <option value="2">Calgary</option>
+                <option value="3">Moosejaw</option>
+              </select>
+              <label for="dummy8">Another field</label>
+              <input type="text" class="text" id="dummy8" name="dummy8" value="Field with class .text">
+            </p>
+  
+          </fieldset>
+  
+        </div>
+
+        <hr />
+  
+        <p>
+          <a href="http://validator.w3.org/check?uri=referer">
+          <img src="valid.png" alt="Valid HTML 4.01 Strict" height="31" width="88" class="top"></a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
